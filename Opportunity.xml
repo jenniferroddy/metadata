@@ -1,0 +1,114 @@
+<Workflow>
+    <alerts>
+        <fullName>Alert_XDR_an_Opportunity_to_Stage_Closed_Rejected</fullName>
+        <description>Alert XDR an Opportunity to Stage Closed - Rejected</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>BDR</recipient>
+            <type>opportunityTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>SDR</recipient>
+            <type>opportunityTeam</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>unfiled$public/Alert_XDR_an_Opportunity_to_Stage_Closed_Rejected</template>
+    </alerts>
+    <alerts>
+        <fullName>CB_Notification_when_the_Status_is_Declined</fullName>
+        <description>CB Notification when the Status is Declined</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Chargebee_Email_Templates/CB_Marked_as_Declined</template>
+    </alerts>
+    <alerts>
+        <fullName>CB_Notification_when_the_Status_is_No_Show</fullName>
+        <description>CB Notification when the Status is No Show</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Chargebee_Email_Templates/CB_Marked_as_No_Show</template>
+    </alerts>
+    <alerts>
+        <fullName>CB_Notification_when_the_Status_is_Qualified</fullName>
+        <description>CB Notification when the Status is Qualified</description>
+        <protected>false</protected>
+        <recipients>
+            <type>accountOwner</type>
+        </recipients>
+        <recipients>
+            <type>campaignMemberDerivedOwner</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Chargebee_Email_Templates/CB_Makred_Qualified_Notification</template>
+    </alerts>
+    <alerts>
+        <fullName>CB_Notification_when_the_Status_is_Re_assignment</fullName>
+        <description>CB Notification when the Status is Re-assignment</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Chargebee_Email_Templates/CB_Marked_as_Re_assignment</template>
+    </alerts>
+    <alerts>
+        <fullName>CB_Notification_when_the_Status_is_Rejected</fullName>
+        <description>CB Notification when the Status is Rejected</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Chargebee_Email_Templates/CB_Marked_as_Rejected</template>
+    </alerts>
+    <alerts>
+        <fullName>CB_Notification_when_the_Status_is_Request_to_Reschedule</fullName>
+        <description>CB Notification when the Status is Request to Reschedule</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Chargebee_Email_Templates/CB_Maked_as_Request_to_Reschedule_Notification</template>
+    </alerts>
+    <alerts>
+        <fullName>Opportunity_Closed_Rejected_Notification</fullName>
+        <description>Opportunity Closed - Rejected Notification</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Opportunity_Closed_Rejected_Notification</template>
+    </alerts>
+    <alerts>
+        <fullName>Opportunity_Closed_Won</fullName>
+        <description>Opportunity Closed Won</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>rerogbogbo@plative.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Chargebee_Email_Templates/Opportunity_Notification_Closed_Won</template>
+    </alerts>
+    <alerts>
+        <fullName>Opportunity_Owner_Notification</fullName>
+        <description>Opportunity Owner Notification</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Opportunity_Record_Assignment_Notification</template>
+    </alerts>
+</Workflow>
